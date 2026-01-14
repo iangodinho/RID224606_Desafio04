@@ -18,7 +18,7 @@ export function Header() {
         <div className="flex items-center justify-between">
           {/* Logo/Nome */}
           <div className="text-xl font-bold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
-            Portfolio
+            Portifólio
           </div>
 
           {/* Menu Desktop */}
@@ -46,17 +46,13 @@ export function Header() {
           {/* Ícones Sociais Desktop */}
           <div className="hidden md:flex items-center space-x-4">
             <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="https://github.com/iangodinho"
               className="text-slate-300 hover:text-white transition-colors"
             >
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/iangodinho"
               className="text-slate-300 hover:text-white transition-colors"
             >
               <Linkedin className="w-5 h-5" />
@@ -95,17 +91,13 @@ export function Header() {
             </button>
             <div className="flex items-center space-x-4 pt-4 border-t border-slate-800">
               <a
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="https://github.com/iangodinho"
                 className="text-slate-300 hover:text-white transition-colors"
               >
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/iangodinho"
                 className="text-slate-300 hover:text-white transition-colors"
               >
                 <Linkedin className="w-5 h-5" />
