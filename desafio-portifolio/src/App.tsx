@@ -1,6 +1,7 @@
 import { Header } from "./components/Header";
 import { Principal } from "./components/Principal";
 import { ProjectCard } from "./components/ProjectCard";
+import { TimelineItem } from "./components/TimelineItem";
 
 function App() {
   const projects = [
@@ -34,6 +35,25 @@ function App() {
     },
   ];
 
+  const timeline = [
+    {
+      year: '2019',
+      description: 'Meu primeiro contato com computação, no mini-curso Facens Code. Aprendi conceitos básicos, como lógica de programação.',
+    },
+    {
+      year: '2022',
+      description: 'Primeiro ano de faculdade cursando Ciência da Computação. Início da minha trajetória acadêmica.',
+    },
+    {
+      year: '2024',
+      description: 'Meu primeiro estágio na área da computação. Aprendizado prático e desenvolvimento de habilidades técnicas.',
+    },
+    {
+      year: '2025',
+      description: 'Oportunidade de aprendizado através do bootcamp realizado em parceria da UBS com a DNC e a LANDtech.',
+    },
+  ];
+
   return (
       <div className="min-h-screen bg-slate-950 text-white">
         <Header />
@@ -61,6 +81,29 @@ function App() {
           </div>
         </section>
 
+        <section id="sobre" className="py-24 bg-slate-900">
+          <div className="container mx-auto px-6">
+            <h2 className="text-4xl md:text-5xl mb-16 text-center">
+              <span className="bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
+                Sobre mim
+              </span>
+            </h2>
+            <div className="relative max-w-6xl mx-auto">
+              <div className="absolute top-8 left-0 w-full h-0.5 bg-gradient-to-r from-purple-600/50 to-blue-600/50 hidden md:block" />
+              <div className="flex flex-col md:flex-row items-start justify-center gap-8 md:gap-4 relative z-0">
+                {timeline.map((item, index) => (
+                  <TimelineItem
+                    key={index}
+                    year={item.year}
+                    description={item.description}
+                    isLast={index === timeline.length - 1}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+        
       </div>
   );
 }
