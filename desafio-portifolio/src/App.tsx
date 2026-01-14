@@ -82,6 +82,26 @@ function App() {
           </div>
         </section>
 
+        <section id="tecnologias" className="py-24 bg-slate-950">
+          <div className="container mx-auto px-6">
+            <h2 className="text-4xl md:text-5xl mb-16 text-center">
+              <span className="bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
+                Tecnologias
+              </span>
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+              {['React', 'TypeScript', 'C#', '.Net', 'SQL Server', 'Python', 'Docker', 'Git'].map((tech) => (
+                <div
+                  key={tech}
+                  className="bg-slate-900 border border-slate-800 rounded-xl p-6 text-center hover:border-purple-500 transition-colors"
+                >
+                  <p className="text-slate-300">{tech}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section id="sobre" className="py-24 bg-slate-900">
           <div className="container mx-auto px-6">
             <h2 className="text-4xl md:text-5xl mb-16 text-center">
