@@ -1,3 +1,4 @@
+import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Principal } from "./components/Principal";
 import { ProjectCard } from "./components/ProjectCard";
@@ -103,6 +104,8 @@ function App() {
             </div>
           </div>
         </section>
+
+        <Footer />
         
       </div>
   );
